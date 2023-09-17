@@ -21,32 +21,32 @@ def speed_time (start_time, end_time, userInput):
 
 while True :
     check = input("Ready to test: Yes / No: ")
-    if check == "yes": 
+    if check == "yes":
         test = [
             "In literary theory, a text is any object that can be, whether this object is a work of literature,",
              "Within the field of literary criticism,  also refers to the original information content of a particular ",
             "Since the history of writing predates the concept "
         ]
-    
+
         test1 = r.choice(test)
-    
+
         print("Typing Speed")
         print(test1)
-    
-    
+
+
         start_time = time()
         test_input = input(" Enter : ")
         end_time = time()
-    
-    
+
+
         print("Speed", speed_time(start_time, end_time, test_input), "w/sec")
         print("Error : " ,mistake(test1, test_input))
-    elif check.lower() == "No":
+    elif check == "No":
         print("Thank You ")
         break
     else:
         print("Wrong input")
-        
+
 
 
 
